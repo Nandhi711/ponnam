@@ -258,12 +258,8 @@ button{
     left: 0;
     top: 0;
     height: 100%;
-    width: 100%;
-    background-color: blue;
-}
-.header .nav-inner{
-    min-height: 50vh;
-    background-color: red;
+    width:100%
+    background-color:red;
 
 
 }
