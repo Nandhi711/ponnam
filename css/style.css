@@ -10,13 +10,13 @@ variables
 
 
 :root{
-    --main-color: #e02f6b;
+    --main-color: #c90845;
     --blue : #0000ff;
     --blue-dark:#18293c;
     --orange: #ffa500;
     --green-yellow:#cddc39;
-    --pink-light:#efa2b4;
-    --cyan-light:#aef1ee;
+    --pink-light:#c313b7;
+    --cyan-light:#2ec8c3;
     --white:#ffffff;
     --white-alpha-40:rgba(255,255,255,0.40);
     --white-alpha-25:rgba(255,255,255,0.25);
@@ -99,7 +99,7 @@ section.fade-out{
     animation: fadeOut 0.5s ease-in-out forwards;
 }
 .main{
-    max-width: 1200px;
+    max-width: 1300px;
     margin: auto;
     transition: all 0.5s ease-in-out;
     position: relative;
@@ -185,6 +185,10 @@ button{
     vertical-align: middle;
     transition: color 0.3s ease;
 }
+.cvdiv{
+    padding-top: 30px;
+}
+
 .btn::before{
     content: '';
     position:absolute;
@@ -264,8 +268,8 @@ button{
 
 }
 .bg-circles .circle-1{
-    height: 60px;
-    width: 60px;
+    height: 80px;
+    width: 80px;
     background-color: var(--blue);
     left: 5%;
     top: 10%;
@@ -288,8 +292,8 @@ button{
     height: 120px;
     width: 120px;
     background-color: var(--white);
-    top: 40%;
-    right: -60px;
+    top: 75%;
+    right: 390px;
     opacity: 0.6;
 
 
@@ -299,9 +303,23 @@ button{
     width: 50px;
     background-color: var(--orange);
     top: 80%;
-    left: -30px;
+    left: 90px;
     opacity: 0.6;
+    animation: bounceTop 7s ease-in-out infinite;
 
+
+
+
+
+}
+.bg-circles .circle-5{
+    height: 80px;
+    width: 80px;
+    background-color: #b90ed3;
+    left: 90%;
+    top: 30%;
+    opacity: 0.3;
+    animation: bounceTop 15s ease-in-out infinite;
 
 
 
@@ -565,6 +583,11 @@ button{
     margin: auto;
 
 }
+.prof-dp{
+    border-radius: 50%;
+    max-block-size: 350px;
+    max-zoom: 50%;
+}
 .home-img .img-box img{
     width: 100%;
     border-radius: 50%;
@@ -585,12 +608,16 @@ button{
     max-width: 380px;
     border: 1px solid var(--white-alpha-40);
     margin: auto;
-    border-radius: 10px;
+    border-radius: 25px;
 
 }
 .about-img .img-box img{
     width: 100%;
 
+}
+
+.about-dp{
+    border-radius: 25px;
 }
 .about-text h3{
     text-transform: capitalize;
